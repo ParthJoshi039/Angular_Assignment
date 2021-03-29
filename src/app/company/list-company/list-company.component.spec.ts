@@ -22,4 +22,6 @@ describe('ListCompanyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });
