@@ -1,0 +1,14 @@
+{
+                "id":1,
+                "email":"jparth678@gmail.com",
+                "name":"Parth Enterprice",
+                "totalEmployee":"1000",
+                "address":"Vastral",
+                "isCompanyActive":true,
+                "totalBranch":"1",
+                "companyBranch":[{
+                                "branchId":"1",
+                                "branchName":"Vas-Ahm",
+                                "address":"Vastral"
+                }]
+   }

@@ -6,7 +6,7 @@ import { ViewCompanyComponent } from './view-company/view-company.component';
 import { ListCompanyComponent } from './list-company/list-company.component';
 
 const routes: Routes = [
-  {path:'addcompany', component: AddCompanyComponent},
+  {path:'AddCompany', component: AddCompanyComponent},
   {path:'EditCompany', component: EditCompanyComponent},
   {path:'ViewCompany', component: ViewCompanyComponent},
   {path:'ListCompany', component: ListCompanyComponent}
