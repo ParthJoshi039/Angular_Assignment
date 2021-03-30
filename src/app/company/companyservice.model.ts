@@ -1,4 +1,5 @@
 export class Company{
+  [x: string]: any;
   Id!: number;
   EmailId!:string;
   Name!:string;
@@ -6,11 +7,11 @@ export class Company{
   Address!:String;
   IsCompanyActive!:boolean;
   TotalBranch!:number;
-  // companyBranch!:Branch[];
-}
+  companyBranch!:Branch[];
+};
 
-//  export Class Branch{
-//    BranchId!: number;
-//    BranchName!: string;
-//    Address!:string;
-//  }
+ export class Branch{
+   BranchId!: number;
+   BranchName!: string;
+   Address!:string;
+ }

@@ -19,21 +19,22 @@ export class CompanyserviceService {
   {
     return this.http.get<Company[]>('assets/CompanyData/Company.json').pipe(catchError(this.errorHandler));
   }
-  InitializeCompany(){
+  CreateCompany(){
     this.GetAllCompanies().subscribe((data)=>{
       this.f.next(true);
       this.CompanyData.next(data);
     });
   }
-  BroadcastCompany(comp:Company[]){
+  AddCompany(comp:Company[]){
     console.log("broadcast");
     this.f.next(true);
     this.CompanyData.next(comp);
   }
-  ReceiveCompany():Observable<Company[]>{
+  GetAllCompany():Observable<Company[]>{
+    this.Companies=this.GetAllCompanies();
     return this.Companies;
   }
-  ReceiveFlag():Observable<boolean>{
+  GetFlag():Observable<boolean>{
     return this.flag;
   }
   errorHandler(error:HttpErrorResponse){
